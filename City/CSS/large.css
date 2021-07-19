@@ -1,0 +1,280 @@
+@charset "utf-8";
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #F2EAD0;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Glegoo', serif;;
+}
+/*resposnive menu*/
+.menu {
+  background-color: #402124;
+  height: 75px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #F2EAD0;
+  box-shadow: 5px 0 10px #8C7B46;
+}
+.menu_items {
+  display: flex;
+  list-style: none;
+  margin-right: 30px;
+
+}
+.menu_items li {
+  border-radius: 3px;
+  margin:0 5px;
+}
+
+.menu_items li a {
+  padding: 7px 13px;
+  text-decoration: none;
+  font-size: 18px;
+  display:block;
+  text-transform: uppercase;
+  color: #F2EAD0;
+  }
+
+.menu_items li:hover, li :active {
+  background-color:#A65656;
+  transition: 4s;
+}
+.btn_menu {
+  margin-right: 30px;
+  font-size:25px;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+ul.show {
+  top: 65px;
+}
+
+@media screen and (max-width: 952px) {
+  .logo{
+    font-size: 30px;
+    padding-left: 35px;  
+}
+.menu_items li a {
+  font-size: 16px;
+}
+}
+@media screen and (max-width: 858px) {
+  .menu {
+    height: 65px;
+  }
+  .btn_menu {
+    display: inline-flex;
+  }
+  .menu_items {
+    position: fixed;width: 100vw;
+    height: calc(100% - 65px);
+    background: #402124;
+    top: -100vh;
+    text-align: center;
+    transition: all .4s;
+    flex-direction: column;
+  }
+  .menu_items li {
+    margin: 30px 0 0 0;
+    line-height: 30px;
+  }
+  .menu_items li:hover {
+    background: none;
+  }
+  .menu_items li a {
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+  }
+  .menu-items li a:hover {
+    color: #402124;
+  }
+  .logo {
+    font-size: 25px;
+    padding-left: 35px;
+  }
+}
+@media screen  and (max-width:858px) and (orientation: landscape) {
+  .menu_items li {
+    margin: 5px 0 0 0;
+  }
+  .menu_items  {
+    overflow: scroll;
+    height: calc(100% - 65px);
+  }
+}
+
+/*section*/
+section{
+  width: 100%;
+  height: 95vh;
+  background-image: url("/FinalProject/images/Arequipa.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.weathersummary {
+	background: #F2EAD0;
+	border: 1px solid #402124;
+	box-shadow: 0 0 30px #402124;
+	opacity: .8;
+	color: #402124;
+	padding: .5rem;
+	opacity: .8;
+	border-radius: 10px;
+	width:250px;
+	height:380px;
+	position: absolute;
+	top: 100px;
+	left: 150px;
+}
+.weathersummary p{
+  font-size: 1.2rem;
+}
+   
+
+#contact-section1 {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  margin-top: 0px;
+
+}
+
+/* icons*/
+#section2.footer {
+  position: relative;
+  font-family: 'Glegoo', serif;
+  padding: 5px;
+}
+.footer__content{
+ padding: 25px;
+ text-align: center;
+ color: #F2EAD0;
+ background-color: #402124;
+
+}
+
+.footer__heading{
+  position: relative;
+  
+}
+.footer__content p {
+  font-size: 12px;
+  font-weight: 100;
+  padding: 10px 0px;
+ }
+ul.social__media{
+  margin:0;
+  padding: 0;
+  display: inline-block;
+  margin-top: 15px;
+}
+ul.social__media li{
+ list-style-type:none;
+ display:inline-block;
+ margin-right: 15px;
+}
+ul.social__media li a{
+  color: #402124;
+  font-size: 20px;
+}
+ul.social__media li {
+
+  text-align: center;
+  height: 45px;
+  width: 45px;
+  border-radius: 50px;
+  background-color: #8C7B46;
+  line-height: 40px;
+  border: 2px solid #545d5d;
+  box-shadow: 0px 1px #F2EAD0;
+  box-shadow: 0 2px 10px -1px rgba(0, 0, 0, 0.55), 0 0px 20px 0px rgba(0, 0, 0, 0.55);
+}
+
+ul.bus__list{
+  padding: 0;
+  margin: 0;
+}
+
+ul.bus__list li{
+  list-style-type:none;
+  margin-bottom: 5px;
+}
+
+a{
+  color: #F2EAD0;}
+  a:visited: {color: white;}
+a:hover {color: #A65656;}
+}
+
+/*home*/
+
+.item-head {
+  padding: .5em;
+  height: auto;
+  text-align: center;
+  background: #592525;
+  color: beige;
+  border-radius: 9px;
+}
+
+h1 {
+  font-size: 2rem;
+  font-family: 'Glegoo', serif;
+  color: #402124;
+  text-align: center;
+  padding: 0px;
+
+}
+.description p {
+  margin: .3em;
+  padding: 2em;
+ color: #592525;
+ text-align: center;
+ font: 1.2em; 
+ font-family: 'Glegoo', serif;
+ }
+
+
+h2 h3 h4{
+  font-family: 'Glegoo', serif;
+  color: #402124;
+  text-align: center;
+  margin: 20px;
+ }
+
+/*images of the city*/
+#target {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    text-align:center;
+    
+ }
+#imgPersona{
+    width:550px;
+	height:350px;
+	border-radius:9px;
+    box-shadow: 0 0 30px #402124;;
+	border: 4px solid beige;
+}
+h5 {
+    font-family: 'Glegoo', serif;
+    font: 1.2em; 
+    color: #402124;
+    text-align: center;
+    top: 300px;
+    left:200px;
+    padding: 10px;
+    text-align: justify;
+    margin:  40px;    
+
+}
