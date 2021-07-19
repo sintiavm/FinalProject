@@ -1,0 +1,19 @@
+/* Grid or Flex */
+/* RAVN, Jose Ramos / Mirador */
+
+#gallery img {
+  width: 100%;
+  height: auto;
+}
+
+#gallery {
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 12px;
+}
+
+@media (max-width: 576px) {
+   #gallery {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+}
