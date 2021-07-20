@@ -210,11 +210,10 @@ ul.bus__list li{
   margin-bottom: 5px;
 }
 
-a{
+a {
   color: #F2EAD0;}
-  a:visited: {color: white;}
+  a-visited {color: white;}
 a:hover {color: #A65656;}
-}
 
 /*home*/
 
