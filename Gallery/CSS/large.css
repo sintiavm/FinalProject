@@ -12,7 +12,12 @@ body{
   padding: 0px;
   font-family: 'Glegoo', serif;
 }
-
+h1 {
+  font-size: 4rem;
+  margin: 0;
+  text-align: center;
+     
+}
 
 /*resposnive menu*/
 .menu {
@@ -24,6 +29,7 @@ body{
   align-items: center;
   border-bottom: 1px solid #F2EAD0;
   box-shadow: 5px 0 10px #8C7B46;
+  font-family: 'Glegoo', serif;
 }
 .menu_items {
   display: flex;
@@ -114,30 +120,52 @@ ul.show {
     height: calc(100% - 65px);
   }
 }
+/*gallery*/
 
-td img {
-	width:400px;
-	height:300px;
-	border-radius:9px;
-}
-table
-{position:relative; margin:70px auto; border-spacing:5px;
-}
-h1 {
-  color:#402124; 
-  position:relative; 
-  top:30px; font-size:30px; 
-  text-align:center;
-  font-family: 'Glegoo', serif;
-}
-  
-table
-{position:relative;
-	 margin:70px auto; 
-	 border-spacing:5px;
+:root {
+  font-size: 10px;
 }
 
-#section2.footer {
+.container {
+  max-width: 93.5rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -1rem -1rem;
+  padding-bottom: 3rem;
+}
+
+.gallery-item {
+  position: relative;
+  flex: 1 0 22rem;
+  margin: 1rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.gallery-item:hover 
+.gallery-item:focus  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.gallery-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#section.footer {
   position: relative;
   font-family: 'Glegoo', serif;
   padding: 5px;
