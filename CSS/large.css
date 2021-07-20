@@ -213,7 +213,7 @@ a{
   color: #F2EAD0;}
   a:visited {color: white;}
 a:hover {color: #A65656;}
-}
+
 
 /*home*/
 
@@ -234,7 +234,7 @@ h1 {
 
 }
 .description p {
-  margin: .em;
+  margin: 1.em;
   padding: 0.5em;
  color: #592525;
  text-align: center;
