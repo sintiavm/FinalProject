@@ -60,7 +60,7 @@ ul.show {
 /*section*/
 section {
   width: 100%;
-  height: 60vh;
+  height: 90vh;
   background-image: url("images/visitar.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -75,12 +75,12 @@ section {
 	padding: .5rem;
 	opacity: .8;
 	border-radius: 10px;
-	width:280px;
-	height:390px;
+	width:275px;
+	height:385px;
 	position: absolute;
 	top: 100px;
 	left: 150px;
-}
+ }
 .weathersummary p{
   font-size: 1.2rem;
 }
@@ -176,6 +176,7 @@ h1 {
   font-family: 'Glegoo', serif;
   color: #402124;
   text-align: center;
+  padding: .7em;
 
 }
 .description p {
