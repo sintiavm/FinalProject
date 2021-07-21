@@ -20,12 +20,4 @@ fetch(apiURL)
     document.getElementById('Humidity').innerHTML = des;
     document.getElementById('Speed').innerHTML = speed;
 
-    // images
-
-    //const imagesrc = 'https://openweathermap.org/img/w/' + response.weather[0].icon + '.png';  // note the concatenation
-    // note how we reference the weather array
-    //document.getElementById('imagesrc').textContent = imagesrc;  // informational specification only
-    //document.getElementById('icon').setAttribute('src', imagesrc);  // focus on the setAttribute() method
-    //document.getElementById('icon').setAttribute('alt', desc);
-  })
-
+ 
